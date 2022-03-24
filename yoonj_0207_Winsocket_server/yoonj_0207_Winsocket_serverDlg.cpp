@@ -84,7 +84,7 @@ BOOL Cyoonj0207WinsocketserverDlg::OnInitDialog()
 
 	SOCKADDR_IN srv_addr; 
 	srv_addr.sin_family = AF_INET; //주소체계 - IPv4
-	srv_addr.sin_addr.s_addr = inet_addr("172.30.1.89"); //ipconfig로 ip가져옴
+	srv_addr.sin_addr.s_addr = inet_addr("121.164.89.226"); //ipconfig로 ip가져옴
 	srv_addr.sin_port = htons(20001); //포트번호 
 	//listem socket에 소켓에 대한 명세(srv_addr)를 등록
 	//srv_addr 를 long pointer형태로 변환해서 등록
