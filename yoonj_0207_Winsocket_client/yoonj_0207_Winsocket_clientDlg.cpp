@@ -124,7 +124,7 @@ BOOL Cyoonj0207WinsocketclientDlg::OnInitDialog()
 	sockaddr_in srv_addr;  //소켓에 주소정보를 등록
 	//SOCKADDR_IN srv_addr;
 	srv_addr.sin_family = AF_INET; //IPv4 주소체계
-	srv_addr.sin_addr.s_addr = inet_addr("172.30.1.89"); //서버의 IP주소
+	srv_addr.sin_addr.s_addr = inet_addr("121.164.89.226"); //서버의 IP주소
 	srv_addr.sin_port = htons(20001); //port
 
 	WSAAsyncSelect(mh_socket, m_hWnd, 27001, FD_CONNECT);//connect가 성공하면 윈도우핸들에 27001번 메시지가 발생 -> WinProc에서 처리
